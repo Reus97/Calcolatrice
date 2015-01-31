@@ -1,2 +1,2 @@
-# Calcolatrice
-una calcolatrice
+# More Than A Calculator
+New C++ Calculator
