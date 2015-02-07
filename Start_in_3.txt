@@ -1,0 +1,3 @@
+/* This file contains a graphic word: Start In 3 */
+/* Program will extract it and put it in display. */
+/* When you download this file deletes these comments. */
