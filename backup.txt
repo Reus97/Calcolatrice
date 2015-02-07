@@ -1,0 +1,1 @@
+/* This file writes the time of exits from program made with Normal Menu and Special Menu. */
