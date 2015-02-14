@@ -64,18 +64,18 @@ FIX 6.1.1.1 -> Bug fixed: remove the bug at CL_BasDoc self-made library, now it 
 /****************************************************************************************/
 /****************************** LIBRARY INCAPSULATION ***********************************/
 /****************************************************************************************/
-#include <iostream>	                                                          //Used for input/output
-#include <math.h>	                                                            //Used for math operations
-#include <windows.h>	                                                        //Used for sleep functions
-#include "graphic.h"	                                                        //Self-made Class used to make graphic effects
-#include "color.h"	                                                          //Self-made Class used to change cout color
-#include "CL_BasInstruction.h"	                                              //Self-made Class used to resolve operations and write on result.txt
-#include "CL_BasTimeClock.h"	                                                //Self-made Class used to write time in backup.txt
-#include "CL_BasDoc.h"	                                                      //Self-made Class used to write documentation in documentation.txt
-#include <stdio.h>	                                                          //Used for old C - CLASSIC instructions
-#include <conio.h>	                                                          //Used for old C - CLASSIC instructions
-#include <fstream>	                                                          //Used to manage the myFile (result.txt / backup.txt)
-#include <string.h>	                                                          //Used to manage strings
+#include <iostream>	                            //Used for input/output
+#include <math.h>	                            //Used for math operations
+#include <windows.h>	                            //Used for sleep functions
+#include "graphic.h"	                            //Self-made Class used to make graphic effects
+#include "color.h"                                        //Self-made Class used to change cout color
+#include "CL_BasInstruction.h"	             //Self-made Class used to resolve operations and write on result.txt
+#include "CL_BasTimeClock.h"	                            //Self-made Class used to write time in backup.txt
+#include "CL_BasDoc.h"	                            //Self-made Class used to write documentation in documentation.txt
+#include <stdio.h                                         //Used for old C - CLASSIC instructions
+#include <conio.h>	                            //Used for old C - CLASSIC instructions
+#include <fstream>	                            //Used to manage the myFile (result.txt / backup.txt)
+#include <string.h>	                            //Used to manage strings
 using namespace std;
 
 
@@ -106,7 +106,7 @@ char Menu_Basic(CL_BasInstruction calculator)
     cout<<"q Esci (senza backup) |"<<endl;
     cout<<"=========================================|"<<endl;
     cout<<endl<<endl<<calculator.GetStatus();
-    //cin>>scelta_basic;
+
     scelta_basic = getch();
     cout<<endl<<scelta_basic<<endl;
     return scelta_basic;
