@@ -72,7 +72,7 @@ FIX 6.1.1.1 -> Bug fixed: remove the bug at CL_BasDoc self-made library, now it 
 #include "CL_BasInstruction.h"	             //Self-made Class used to resolve operations and write on result.txt
 #include "CL_BasTimeClock.h"	                            //Self-made Class used to write time in backup.txt
 #include "CL_BasDoc.h"	                            //Self-made Class used to write documentation in documentation.txt
-#include <stdio.h                                         //Used for old C - CLASSIC instructions
+#include <stdio.h>                                        //Used for old C - CLASSIC instructions
 #include <conio.h>	                            //Used for old C - CLASSIC instructions
 #include <fstream>	                            //Used to manage the myFile (result.txt / backup.txt)
 #include <string.h>	                            //Used to manage strings
