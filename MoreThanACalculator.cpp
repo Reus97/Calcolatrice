@@ -58,6 +58,9 @@ FIX 6.1.1 ->   User can choose if he wants only .txt documentation, only .doc do
                them.
 FIX 6.1.1.1 -> Bug fixed: remove the bug at CL_BasDoc self-made library, now it writes the correct cout
                in result.txt file.
+FIX 7.0 ->     Adding of MessageBox Label Construct, they will appear to user on quit condition,
+               on the create and the delete of documentation (.doc / .txt), both for BasicMenu and 
+               SpecialMenu.
 */
 
 
@@ -111,6 +114,11 @@ char Menu_Basic(CL_BasInstruction calculator)
     cout<<endl<<scelta_basic<<endl;
     return scelta_basic;
 }
+
+    void DisplayRecurceLBLBasic_Quit(CL_BasInstruction calculator)
+    {
+               MessageBox(NULL,"     Thanks To Support This Sofrware.","GOODBYE USER",MB_ICONASTERISK | MB_OK | MB_DEFBUTTON2);    
+    }
 
 
 /****************************************************************************************/
@@ -169,6 +177,7 @@ while (true)
         myFile<<"************************************************"<<endl<<endl;
         myFile.close();
         timeClock.currentDateToString_exit();
+        DisplayResurcesLBLBasic_Quit(calculator);
         break;
     }
     
