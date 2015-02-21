@@ -14,7 +14,7 @@ It has a main.cpp that used the simple function of a Menu() and some
 personal Libraries, that offer some math types of calculations.
 It has comment on the most difficult instructions to explain how they work,
 if the clients want more they have only to ask to me.
-
+//Modifica Sorgente
 
 // ===================================== HISTORY ===================================== //
 FIX v1.0 ->    The program was designed on Christmas Day, it has only the basic operation
