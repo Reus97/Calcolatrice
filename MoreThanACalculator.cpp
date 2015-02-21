@@ -86,6 +86,7 @@ using namespace std;
 /******************************* FUNCTION PROTOTYPES ************************************/
 /****************************************************************************************/
 char Menu_Basic();
+void DisplayRecurceLBLBasic_Quit();
 
 
 /****************************************************************************************/
@@ -115,7 +116,7 @@ char Menu_Basic(CL_BasInstruction calculator)
     return scelta_basic;
 }
 
-    void DisplayRecurceLBLBasic_Quit(CL_BasInstruction calculator)
+    void DisplayRecurceLBLBasic_Quit()
     {
                MessageBox(NULL,"     Thanks To Support This Sofrware.","GOODBYE USER",MB_ICONASTERISK | MB_OK | MB_DEFBUTTON2);    
     }
@@ -177,7 +178,7 @@ while (true)
         myFile<<"************************************************"<<endl<<endl;
         myFile.close();
         timeClock.currentDateToString_exit();
-        DisplayResurcesLBLBasic_Quit(calculator);
+        DisplayResurcesLBLBasic_Quit();
         break;
     }
     
