@@ -88,6 +88,20 @@ char Menu_DeleteCondition()
 	return choice;
 }
 
+        void DisplayRecurceLBLSpecial_Quit()
+        {
+        	MessageBox(NULL,"     Thanks To Support This Software.","GOODBYE USER",MB_ICONASTERISK | MB_OK | MB_DEFBUTTON2);
+        }
+
+        void DisplayRecurceLBLSpecial_CreateDoc()
+        {
+        	MessageBox(NULL,"Documentations are been created successfully.","Documentation",MB_ICONEXCLAMATION | MB_OK | MB_DEFBUTTON2);
+        }
+
+        void DisplayRecurceLBLSpecial_DeleteDoc()
+        {
+        	MessageBox(NULL,"Documentations are been deleted successfully.","Documentation",MB_ICONHAND | MB_OK | MB_DEFBUTTON2);
+        }
 
 /****************************************************************************************/  
 /******************************** CLASS DECLARATIONS ************************************/
@@ -183,7 +197,7 @@ void CL_BasDoc::Call()
 		   		color_default();	 	 
 		  		timeClock.currentDateToString_exit();
 		  		color_default();
-		  		getch();
+                                DisplayResourceLBLSpecial_Quit();
 				exit(0);
 				break;
 				
@@ -334,6 +348,7 @@ void CL_BasDoc::Call()
 				point_temp = 0;
 				var_up = 0;
 				cout<<endl;
+				DisplayResourceLBLSpecial_CreateDoc();
 				break;
 				
 			
@@ -366,6 +381,7 @@ void CL_BasDoc::Call()
 					  point_temp = 0;
 					  var_up = 0;
 					  cout<<endl;
+					  DisplayResourceLBLSpecial_DeleteDoc();
 				    }
 				    
 				    else if (isDelete != DeleteDocumentation())
@@ -410,6 +426,7 @@ void CL_BasDoc::Call()
 					  point_temp = 0;
 					  var_up = 0;
 					  cout<<endl;
+					  DisplayResourceLBLSpecial_DeleteDoc();
 				    }
 				    
 				    else if (isDelete != DeleteDocumentation())
@@ -458,6 +475,7 @@ void CL_BasDoc::Call()
 					  point_temp = 0;
 					  var_up = 0;
 					  cout<<endl;
+					  DisplayResourceLBLSpecial_DeleteDoc();
 				    }
 				    
 				    else if ((isDelete != DeleteDocumentation()) && (isDeleDoc == DeleteDocumentationD()))
